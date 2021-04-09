@@ -15,7 +15,7 @@ font-family: 'Barlow Semi Condensed', sans-serif;
 grid-template-columns: 250px 250px 250px 250px;
 grid-gap: 30px;
   align-content: center;
-  
+  justify-content:center;
 
 }
 
@@ -83,3 +83,25 @@ border: 2px solid hsl(263, 55%, 67%);}
 }
 .name{
 padding: 0px 0 0 10px;}
+
+@media(max-width: 900px){
+	.grid-container{
+	grid-template-columns: 310px;
+	height:auto;
+margin:30% auto 30% auto;
+	width:100%;
+	justify-content:center;
+	}
+	
+	.grid-item {
+	grid-column-end:auto;}
+	.grid-item4{
+	grid-row:3/span 1;}
+	.grid-item2{
+	grid-row-start:2;}
+	.grid-item5{
+	grid-row-start:4;
+	grid-column-end:span 1;}
+	.grid-item3{
+	grid-row-start:5;}
+}
